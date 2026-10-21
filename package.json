@@ -1,0 +1,38 @@
+{
+  "name": "mcp-guardrails",
+  "version": "0.1.0",
+  "description": "Confirm-before-act guardrails for MCP servers: spend limits, user confirmation via elicitation or one-time tokens, and an audit log.",
+  "type": "module",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "guardrails",
+    "elicitation",
+    "ai-agents",
+    "safety"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.0"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "@types/node": "^26.6.5",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.4",
+    "zod": "^4.6.7"
+  }
+}
